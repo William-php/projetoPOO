@@ -1,0 +1,22 @@
+<main>
+    <div class="img">
+        <img src="./../../assets/img/IFBA_MARCA_vertical-01.png" width="50%" height="50%" alt="">
+    </div>
+    <div class="formulario">
+        <div class="card">
+            <form action="" [formGroup]="form">
+                <label for=""><b>Login:</b> </label>
+                <input type="text" placeholder="Login" formControlName="login">
+                <label for=""><b>Senha: </b></label>
+                <input type="password" formControlName="senha">
+                <button class="btn-entrar" (click)="send()" >Entrar</button>
+            </form>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="div-footer">
+        &copy;Desenvolvido por William Ferreira e Joao Vitor
+    </div>
+    
+</footer>

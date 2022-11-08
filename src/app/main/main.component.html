@@ -1,12 +1,12 @@
 <main>
     <aside class="barra-lateral">
         <div class="user">
-            <div id="bemvindo">
-                <p for="">Bem vindo!</p>
-                <p>{{user}}</p>
-                <a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i></a>
-            </div>                                                
-            <img src="./../../assets/img/IFBA_MARCA_vertical-01.png" alt="">
+            <img src="./../../assets/img/IFBA_MARCA_vertical-01.png" width="50%" height="50%" alt="">
+            <div>
+                <p><b>Bem vindo! {{user}}</b></p>                
+            </div>
+            
+            
         </div>
         <!-- <svg (click)="send()" viewBox="0 0 100 80" width="40" height="40">
             <rect width="100" height="20"></rect>
@@ -14,21 +14,26 @@
             <rect y="60" width="100" height="20"></rect>
         </svg> -->
         <ul class="lista">
-            <li>
+            <li (click)="toHome()">
                 <b>Home  <i class="fa fa-home" aria-hidden="true"></i></b>
             </li>
-            <li>
+            <li (click)="toFuncionarios()">
                 <b>Funcionários <i class="fa fa-user" aria-hidden="true"></i> </b>
             </li>
-            <li>
-                <b>Produtos <i class="fa fa-cubes" aria-hidden="true"></i></b>
+            <li (click)="toProdutos()">
+                <b>Produtos <i class="fa fa-cart-arrow-down" aria-hidden="true"></i></b>
+            </li>
+            <li (click)="toSair()">
+                <b>Sair <i class="fa fa-sign-out" aria-hidden="true"></i></b>
             </li>
         </ul>
     </aside>
-    <div class="conteudo">
-        <router-outlet></router-outlet>
-    </div>
-    
+    <ng-container >
+        <div class="conteudo">
+
+            <router-outlet></router-outlet>
+        </div>
+    </ng-container>        
 </main>
 
 <footer>

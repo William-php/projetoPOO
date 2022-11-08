@@ -1,0 +1,24 @@
+<div class="card">
+    <div class="card-header">
+        <div class="d-flex justify-content-between">
+
+            <h4>Cadastrar Funcionários</h4>
+            <button class="btn-close" (click)="fecharCadastro()"></button>
+        </div>
+    </div>
+    <div class="card-body">
+        <form action="" [formGroup]="form">
+            <div class="form-group">
+                <label for="" class="form-label">Nome: </label>
+                <input type="text" class="form-control" formControlName="nome">
+                <label for="" class="form-label">idade: </label>
+                <input type="number" class="form-control" formControlName="idade">
+                <label for="" class="form-label">Matrícula: </label>
+                <input type="text" class="form-control" formControlName="matricula">
+            </div>
+        </form>
+    </div>
+    <div class="card-footer d-flex justify-content-center">
+        <button class="btn-entrar" (click)="registrarFuncionario()">Salvar</button>
+    </div>
+</div>

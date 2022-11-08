@@ -1,5 +1,7 @@
 main {
     display: flex;
+    height: 100vh;
+    background-image: url('./../../assets/img/abstract-blur-supermarket-in-department-store.jpg');
 
 }
 .barra-lateral {
@@ -16,7 +18,6 @@ main {
 
 .user {
     width: 90%;
-    height: 13%;
     border: none;
     display: flex;
     background-color: whitesmoke;
@@ -25,8 +26,9 @@ main {
     padding: 4%;
     box-shadow: 4px 5px 20px black;
     margin-bottom: 20%;
-    font-size: 24px;
+    
     object-fit: contain;
+    align-items: center;
 }
 
 .lista {
@@ -46,7 +48,7 @@ main {
 footer {
     width: 100%;
     height: 50px;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     background-color: rgb(52,156,52);
 }
@@ -57,4 +59,14 @@ footer {
     justify-content: center;
     text-align: center;
     align-items: center;
+}
+
+.conteudo {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    width: 100%;
+    height: 100vh;
 }
